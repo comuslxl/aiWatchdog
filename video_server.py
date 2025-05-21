@@ -22,7 +22,7 @@ from multi_modal_analyzer import MultiModalAnalyzer
 import time
 import uvicorn 
 from multiprocessing import set_start_method 
-from config import VideoConfig, ServerConfig, VIDEO_SOURCE, LOG_CONFIG, ARCHIVE_DIR, update_config
+from config import VideoConfig, ServerConfig, LOG_CONFIG, ARCHIVE_DIR, update_config
 
 # 配置日志记录
 logging.basicConfig(
@@ -54,7 +54,7 @@ args = parse_args()
 update_config(args)
 
 
-
+from config import VIDEO_SOURCE
 
 # 初始化视频源
 video_source = VIDEO_SOURCE
